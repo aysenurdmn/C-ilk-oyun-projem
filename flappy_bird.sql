@@ -1,0 +1,8 @@
+CREATE TABLE Skorlar (
+    KullaniciID INT PRIMARY KEY IDENTITY(1,1),
+    KullaniciAdi NVARCHAR(50) NOT NULL,
+    Sifre NVARCHAR(255) NOT NULL, 
+    KayitTarihi DATETIME DEFAULT GETDATE(),
+    ToplananSkor INT NOT NULL DEFAULT 0,
+    TamamlanmaTarihi DATETIME DEFAULT GETDATE()
+);
